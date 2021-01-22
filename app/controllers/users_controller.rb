@@ -3,4 +3,13 @@ class UsersController < ApplicationController
         users = User.all
         render json: users
     end
+
+    def create
+        user = User.create(user_params)
+        render json: user
+    end
+
+    def user_params
+        params.permit(:username, :password_digest)
+    end
 end
