@@ -16,7 +16,7 @@ admin = User.create(username:"Admin", password: "1234")
 first = User.create(username:"Ben", password: "1111")
 
 #region and state seeds
-west = Region.create(name: "west")
+west = Region.create(name: "west", latMin: 33.5, latMax: 42.0, longMin: -124.5, longMax: -114.6)
 northwest = Region.create(name: "northwest")
 southwest = Region.create(name: "southwest")
 midwest = Region.create(name: "midwest")
