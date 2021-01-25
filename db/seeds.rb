@@ -17,12 +17,12 @@ first = User.create(username:"Ben", password: "1111")
 
 #region and state seeds
 west = Region.create(name: "west", latMin: 33.5, latMax: 42.0, longMin: -124.5, longMax: -114.6)
-northwest = Region.create(name: "northwest")
-southwest = Region.create(name: "southwest")
-midwest = Region.create(name: "midwest")
-southeast = Region.create(name: "southeast")
-midatlantic = Region.create(name: "midatlantic")
-northeast = Region.create(name:"northeast")
+northwest = Region.create(name: "northwest", latMin: 41.1, latMax: 48.6, longMin: -124.8, longMax: -104.2)
+southwest = Region.create(name: "southwest", latMin: 28.8, latMax: 41.4, longMin: -114.0, longMax: -90.4)
+midwest = Region.create(name: "midwest", latMin: 40.7, latMax: 48.8, longMin: -104.0, longMax: -80.5)
+southeast = Region.create(name: "southeast", latMin: 26.9, latMax: 36.6, longMin: -93.8, longMax: -76.2)
+midatlantic = Region.create(name: "midatlantic", latMin: 44.7, longMin:-73.9, latMax:36.7, longMax:-83.0)
+northeast = Region.create(name:"northeast", latMin:41.3, longMin:-73.3, latMax:46.9, longMax:-68.2)
 
 california = State.create(name: "california", region_id: west.id)
 nevada = State.create(name: "nevada", region_id: west.id)
@@ -63,6 +63,7 @@ northcarolina = State.create(name: "north carolina", region_id: southeast.id)
 southcarolina = State.create(name: "south carolina", region_id: southeast.id)
 florida = State.create(name:"florida", region_id: southeast.id)
 georgia = State.create(name: "georgia", region_id: southeast.id)
+
 
 maine = State.create(name: "maine", region_id: northeast.id)
 vermont = State.create(name: "vermont", region_id: northeast.id)
