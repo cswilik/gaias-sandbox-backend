@@ -1,3 +1,3 @@
 class RegionSerializer < ActiveModel::Serializer
-  attributes :id, :name, :latMin, :latMax, :longMin, :longMax
+  attributes :id, :name, :latMin, :latMax, :longMin, :longMax, :weathers
 end

@@ -82,3 +82,9 @@ delaware = State.create(name: "delaware", region_id: midatlantic.id)
 
 #initial weather seeds
 Weather.create(user_id: admin.id, region_id: west.id, description: "its a rainy day in the rockies", temp: 3, wind: 3, rain: 4, cloud: 3)
+Weather.create(user_id: admin.id, region_id: northwest.id, description: "heat wave in the north", temp: 6, wind: 1, rain: 1, cloud: 1)
+Weather.create(user_id: admin.id, region_id: southwest.id, description: "somehow, its freezing in the desert", temp: 1, wind: 6, rain: 1, cloud: 1)
+Weather.create(user_id: admin.id, region_id: midwest.id, description: "clear skies, warm day, but also tornados", temp: 4, wind: 6, rain: 1, cloud: 1)
+Weather.create(user_id: admin.id, region_id: northeast.id, description: "theres a storm coming", temp: 2, wind: 4, rain: 4, cloud: 6)
+Weather.create(user_id: admin.id, region_id: midatlantic.id, description: "great beach weather", temp: 4, wind: 2, rain: 1, cloud: 2)
+Weather.create(user_id: admin.id, region_id: southeast.id, description: "hurricane season", temp: 2, wind: 6, rain: 6, cloud: 6)
