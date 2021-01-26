@@ -16,13 +16,14 @@ admin = User.create(username:"Admin", password: "1234")
 first = User.create(username:"Ben", password: "1111")
 
 #region and state seeds
-west = Region.create(name: "west", latMin: 33.5, latMax: 42.0, longMin: -124.5, longMax: -114.6)
-northwest = Region.create(name: "northwest", latMin: 41.1, latMax: 48.6, longMin: -124.8, longMax: -104.2)
-southwest = Region.create(name: "southwest", latMin: 28.8, latMax: 41.4, longMin: -114.0, longMax: -90.4)
-midwest = Region.create(name: "midwest", latMin: 40.7, latMax: 48.8, longMin: -104.0, longMax: -80.5)
-southeast = Region.create(name: "southeast", latMin: 26.9, latMax: 36.6, longMin: -93.8, longMax: -76.2)
-midatlantic = Region.create(name: "midatlantic", latMin: 44.7, longMin:-73.9, latMax:36.7, longMax:-83.0)
-northeast = Region.create(name:"northeast", latMin:41.3, longMin:-73.3, latMax:46.9, longMax:-68.2)
+west = Region.create(name: "west", latMin: 33.5, latMax: 42.0, longMin: -124.5, longMax: -114.6, centerLat: 38.5, centerLong: -118.6)
+northwest = Region.create(name: "northwest", latMin: 41.1, latMax: 48.6, longMin: -124.8, longMax: -104.2, centerLat: 44.2, centerLong: -116.3)
+southwest = Region.create(name: "southwest", latMin: 28.8, latMax: 41.4, longMin: -114.0, longMax: -90.4, centerLat: 34.3, centerLong: -112.2)
+midwest = Region.create(name: "midwest", latMin: 40.7, latMax: 48.8, longMin: -104.0, longMax: -80.5, centerLat: 44.9, centerLong: -90.5)
+southeast = Region.create(name: "southeast", latMin: 26.9, latMax: 36.6, longMin: -93.8, longMax: -76.2, centerLat: 32.1, centerLong: -85.3)
+midatlantic = Region.create(name: "midatlantic", latMin: 44.7, longMin:-73.9, latMax:36.7, longMax:-83.0, centerLat: 41.4, centerLong: -77.0 )
+northeast = Region.create(name:"northeast", latMin:41.3, longMin:-73.3, latMax:46.9, longMax:-68.2, centerLat: 43.8, centerLong: -71.36)
+
 
 california = State.create(name: "california", region_id: west.id)
 nevada = State.create(name: "nevada", region_id: west.id)

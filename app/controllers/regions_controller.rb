@@ -17,6 +17,6 @@ class RegionsController < ApplicationController
     private
 
     def region_params
-        params.permit(:name, :latMin, :latMax, :longMin, :longMax)
+        params.permit(:name, :latMin, :latMax, :longMin, :longMax, :centerLat, :centerLong)
     end
 end
