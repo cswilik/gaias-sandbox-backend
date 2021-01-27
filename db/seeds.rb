@@ -21,7 +21,7 @@ northwest = Region.create(name: "northwest", latMin: 41.9, latMax: 49.0, longMin
 south = Region.create(name: "south", latMin: 25.9, latMax: 41.9, longMin: -109.9, longMax: -86.9, centerLat: 34.4, centerLong: -96.2)
 midwest = Region.create(name: "midwest", latMin: 41.9, latMax: 49.0, longMin: -109.9, longMax: -86.9, centerLat: 44.9, centerLong: -93.8)
 southeast = Region.create(name: "southeast", latMin: 24.7, latMax: 39.6, longMin: -86.9, longMax: -73.9, centerLat: 35.1, centerLong: -80.1)
-northeast = Region.create(name:"northeast", latMin: 39.6, latMax: 48.5, longMin: -86.9, longMax: -66.5, centerLat: 43.2, centerLong: -73.0)
+northeast = Region.create(name:"northeast", latMin: 39.6, latMax: 49.0, longMin: -86.9, longMax: -66.5, centerLat: 43.2, centerLong: -73.0)
 
 california = State.create(name: "california", region_id: west.id)
 nevada = State.create(name: "nevada", region_id: west.id)
