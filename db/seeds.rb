@@ -14,6 +14,7 @@ Weather.destroy_all
 #user seeds
 admin = User.create(username:"Admin", password: "1234")
 first = User.create(username:"Ben", password: "1111")
+testUser = User.create(username:"testuser", password: "testpassword")
 
 #region and state seeds
 west = Region.create(name: "west", latMin: 31.2, latMax: 41.9, longMin: -126.4, longMax: -109.9, centerLat: 37.9, centerLong: -115.1)
